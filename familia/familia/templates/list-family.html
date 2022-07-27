@@ -1,0 +1,13 @@
+<!--Este es la pagina a abrir para ver el listado de familias-->
+
+<h1>Familias</h1>
+
+
+{% for familie in families %}
+    
+    <h2>{{familie}}</h2>
+
+    <p>La familia: <b>{{familie.name_family}}</b> tiene un total de <b>{{familie.num_members}}</b> miembros.</p>
+    <p>Su dia favorito de la semana es el <b>{{familie.favorite_day_week}}</b></p>
+    <br>
+    {% endfor %}
